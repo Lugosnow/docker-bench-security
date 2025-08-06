@@ -12,7 +12,7 @@ RUN apk add --no-cache iproute2 \
 
 COPY . /usr/local/bin/
 
-HEALTHCHECK CMD exit 0
+HEALTHCHECK CMD [ -e /usr/bin/docker ] || exit 1
 
 WORKDIR /usr/local/bin
 
