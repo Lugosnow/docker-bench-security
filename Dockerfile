@@ -18,3 +18,4 @@ WORKDIR /usr/local/bin
 
 ENTRYPOINT [ "/usr/bin/dumb-init", "/bin/sh", "docker-bench-security.sh" ]
 CMD [""]
+# trigger workflow
